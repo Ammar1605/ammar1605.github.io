@@ -1,0 +1,40 @@
+.navigation div{
+	width: 100%;
+	background-color: lightblue;
+}
+
+.navigation ul{
+	font-size: 20px;
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+
+.navigation ul li{
+	display: inline;
+}
+/*
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover /
+li a:hover {
+  background-color: #111;
+}*/
