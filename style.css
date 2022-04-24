@@ -49,3 +49,19 @@
 	border: 1px none #fff;
     padding: 10px 30px;
 }
+
+#storitve td{
+	width: 50%;
+	text-align: center;
+}
+
+/* Kontakt*/
+#contact{
+	text-align: center;
+}
+
+.text {
+	font-size: 1.7rem;
+	font-weight: bold;
+	font-family: serif;
+}
