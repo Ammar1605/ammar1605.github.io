@@ -65,3 +65,49 @@
 	font-weight: bold;
 	font-family: serif;
 }
+
+/*login*/
+.form{
+	text-align: center;
+	font-size: 15px;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form a{
+	text-decoration: none;
+	color: blue;
+}
+.form a:visited{
+	color: blue;
+}
+.form a:hover{
+	color: hotpink;
+}
+.form a:active{
+	color: red;
+}
+
+.form input{
+	width: 100%;
+	font-size: 20px;
+}
+
+.form label{
+	font-size: 19px;
+}
+
+.form button{
+	width: 30%;
+	height: 40px;
+	font-size: 25px;
+}
+
+#login_form{
+	display: block;
+}
+
+#signup_form{
+	display: none;
+}
