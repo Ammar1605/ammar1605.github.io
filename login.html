@@ -6,23 +6,24 @@
 	<meta name="author" content="Ahmed Fetic">
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="loggingin.js"></script>
 </head>
 <body>
 	<div class="navigation">
 		<ul class="navigation">
-			<li class="active"><a href="index.html" class="button">Domov</a></li>
+			<li><a href="index.html" class="button">Domov</a></li>
 			<li><a href="stranke.html" class="button">Naše stranke</a></li>
 			<li><a href="zakaj_mi.html" class="button">Zakaj mi</a></li>
 			<li><a href="kontakt.html" class="button">Kontakt</a></li>
-			<li id="login"><a href="login.html" class="button">Prijavi se</a></li>
+			<li class="active" id="login"><a href="login.html" class="button">Prijavi se</a></li>
 			<li id="myaccount"><a href="my_account.html" class="button">Moj račun</a></li>
 		</ul>
 	</div>
 
-	<div class="form">   
+	<div class="form" id="login_form">   
     	<h1>Dobrodošli nazaj</h1>
         <br>
-        <form action="loggingin.php" method="post" id="login_form">
+        <form action="loggingin.php" method="post">
         
         	<label>E-naslov: <br></label>
 			<input name="e-mail" type="email" autocomplete="off" placeholder="E-mail*"/>
@@ -32,20 +33,54 @@
         	<input name="password" type="password" autocomplete="off" placeholder="Geslo*"/>
         	<br>
         	<p class="forgot" style="float: left;"><a href="#">Pozabljeno geslo?</a></p>
-        	<p class="forgot" style="float: right;"><a href="#">Niste še član? Registriraj se zdaj!</a></p>
+        	<p class="forgot" style="float: right;"><a href="#" id="sup">Niste še član? Registriraj se zdaj!</a></p>
         	<br>
         	<br>
         	<br>
         	<br>
-        	<button name="submit" type="submit" id="log_in"/>Vpiši se</button>
+        	<button name="submit" type="submit" id="log_in">Vpiši se</button>
 		</form>
     </div>
 
-    <div class="form">
+    <div class="form" id="signup_form">
     	<h1>Pridružite se nam!</h1>
     	<br>
-    	<form action="registering.php" method="post" id="signup_form">
-    		
+    	<form action="registering.php" method="post">
+    		<label>Ime: </label>
+    		<input type="text" name="ime" autocomplete="off" placeholder="Ime*">
+    		<br>
+    		<br>
+    		<label>Priimek: </label>
+    		<input type="text" name="priimek" autocomplete="off" placeholder="Priimek*">
+    		<br>
+    		<br>
+    		<label>E-naslov: </label>
+    		<input type="email" name="e-mail" autocomplete="off" placeholder="E-mail*">
+    		<br>
+    		<br>
+    		<label>Geslo: </label>
+    		<input type="password" name="password" autocomplete="off" placeholder="Geslo*">
+    		<br>
+    		<br>
+    		<label>Podjetje: </label>
+    		<input type="text" name="podjetje" autocomplete="off" placeholder="Podjetje">
+    		<br>
+    		<br>
+    		<label>Naslov: </label>
+    		<input type="text" name="naslov" autocomplete="off" placeholder="Naslov">
+    		<br>
+    		<br>
+    		<label>Pošta:</label>
+    		<input type="text" name="posta" autocomplete="off" placeholder="Pošta" maxlength="4">
+    		<br>
+    		<br>
+    		<label>Mesto: </label>
+    		<input type="text" name="mesto" autocomplete="off" placeholder="Mesto">
+    		<br>
+    		<br>
+    		<br>
+    		<br>
+    		<button type="submit" name="submit" id="sign_up">Registriraj se</button>
     	</form>
     </div>
 </body>

@@ -92,6 +92,9 @@
 .form input{
 	width: 100%;
 	font-size: 20px;
+	border-radius: 10px;
+	opacity: 0.8;
+	font-size: 25px;
 }
 
 .form label{
@@ -99,7 +102,7 @@
 }
 
 .form button{
-	width: 30%;
+	width: 50%;
 	height: 40px;
 	font-size: 25px;
 }
